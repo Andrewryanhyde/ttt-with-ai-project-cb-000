@@ -11,7 +11,7 @@ class TicTacToe
     elsif input == "N" || input == "n"
       exit
     else
-      puts "Invalid mode, try again."
+      puts "Invalid input, try again."
       replay?
     end
   end
