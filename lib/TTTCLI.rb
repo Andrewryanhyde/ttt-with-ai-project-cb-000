@@ -2,7 +2,7 @@ class TicTacToe
 
   def initialize
   end
-  
+
   def replay?
     puts "Would you like to play again? [Y/N]"
     input = gets.chomp
@@ -44,3 +44,5 @@ class TicTacToe
      end
      replay?
    end
+
+end
