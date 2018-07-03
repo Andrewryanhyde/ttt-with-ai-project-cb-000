@@ -30,17 +30,17 @@ class TicTacToe
 
      end
      replay?
-   end
 
-   def replay?
-     puts "Would you like to play again? [Y/N]"
-     input = gets.chomp
-     if input == "Y" || input == "y"
-       play_game
-     elsif input == "N" || input == "n"
-       exit
-     else
-       puts "Invalid mode, try again."
-       replay?
+     def replay?
+       puts "Would you like to play again? [Y/N]"
+       input = gets.chomp
+       if input == "Y" || input == "y"
+         play_game
+       elsif input == "N" || input == "n"
+         exit
+       else
+         puts "Invalid mode, try again."
+         replay?
+       end
      end
    end
