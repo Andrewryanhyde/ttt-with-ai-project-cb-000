@@ -2,6 +2,19 @@ class TicTacToe
 
   def initialize
   end
+  
+  def replay?
+    puts "Would you like to play again? [Y/N]"
+    input = gets.chomp
+    if input == "Y" || input == "y"
+      play_game
+    elsif input == "N" || input == "n"
+      exit
+    else
+      puts "Invalid mode, try again."
+      replay?
+    end
+  end
 
   def play_game
     human_1 = Players::Human.new("X")
@@ -30,17 +43,4 @@ class TicTacToe
 
      end
      replay?
-
-     def replay?
-       puts "Would you like to play again? [Y/N]"
-       input = gets.chomp
-       if input == "Y" || input == "y"
-         play_game
-       elsif input == "N" || input == "n"
-         exit
-       else
-         puts "Invalid mode, try again."
-         replay?
-       end
-     end
    end
