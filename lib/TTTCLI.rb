@@ -1,6 +1,6 @@
 class TicTacToe
 
-  def initialize 
+  def initialize
 
   end
 
@@ -8,7 +8,7 @@ class TicTacToe
     human_1 = Players::Human.new("X")
     computer_1 = Players::Computer.new("X")
     computer_2 = Players::Computer.new("O")
-     
+
 
      puts "Welcome to Tic Tac Toe!"
      puts "- - - - - - - - - - - -"
@@ -28,7 +28,7 @@ class TicTacToe
        puts "Invalid mode, try again."
        start
      end
-     
+
      end
      replay?
    end
@@ -36,12 +36,12 @@ class TicTacToe
    def replay?
      puts "Would you like to play again? [Y/N]"
      input = gets.chomp
-     if input == "Y" || input == "y" || input == "Yes" || input == "yes"
+     if input == "Y" || input == "y"
        play_game
-     elsif input == "N" || input == "n" || input == "No" || input == "no"
+     elsif input == "N" || input == "n"
        exit
      else
-       puts "Invalid entry, please try again."
+       puts "Invalid mode, try again."
        replay?
      end
    end
