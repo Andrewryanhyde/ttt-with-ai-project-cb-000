@@ -1,7 +1,6 @@
 class TicTacToe
 
   def initialize
-
   end
 
   def play_game
