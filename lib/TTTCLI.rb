@@ -44,6 +44,3 @@ class TicTacToe
        replay?
      end
    end
- end
- end
- end
