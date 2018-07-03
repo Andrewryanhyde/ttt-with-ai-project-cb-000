@@ -40,8 +40,6 @@ class TicTacToe
        puts "Invalid mode, try again."
        start
      end
-
-     end
      replay?
    end
 
